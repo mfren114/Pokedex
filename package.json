@@ -1,0 +1,21 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "WDD 330 Final Project",
+  "homepage": "https://github.com/mfren114/Pokedex#readme",
+  "bugs": {
+    "url": "https://github.com/mfren114/Pokedex/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfren114/Pokedex.git"
+  },
+  "author": "Mathew Frenette",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4"
+  }
+}
