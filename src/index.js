@@ -1,3 +1,3 @@
 const  helloNode = document.createElement('h1');
-helloNode.textContent= 'Hello world'
+helloNode.textContent= 'Hello'
 document.getElementById('root').appendChild(helloNode);
