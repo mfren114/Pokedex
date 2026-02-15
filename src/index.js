@@ -1,3 +1,3 @@
-const  helloNode = document.createElement('h1');
-helloNode.textContent= 'Hello'
-document.getElementById('root').appendChild(helloNode);
+const  pokedexNode = document.createElement('h1');
+pokedexNode.textContent= 'Pokedex'
+document.getElementById('root').appendChild(pokedexNode);
