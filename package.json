@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "parcel": "^2.16.4"
+  },
+  "devDependencies": {
+    "voice-rss": "^2.0.0"
   }
 }
