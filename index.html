@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="src/css/main.css" />
-    <script  type="module" src="./src/pokemon.js" defer></script>
+    <script src='./src/voicerss-tts.min.js'></script>
+    <!--<script  type="module" src="./src/pokemon.js"></script>-->
 </head>
-<body id="speech-container">
+<body>
+    <script>
+        window.addEventListener('load', function() {
+             var textToSpeak = "Hello, welcome to the Pokedex for the first 151 pokemon. Please dont make me name the all.";
+            var apiKey = "cf42e2847e1b4a1cba2997baa7b39959";
+            var voiceUrl = `https://api.voicerss.org/?key=${apiKey}&hl=en-us&src=${encodeURIComponent(textToSpeak)}`;
+
+            var audio = new Audio(voiceUrl);
+            audio.play().catch(function(error) {
+                console.log("Autoplay prevented: " + error);
+            });
+        });
+    </script>
     <header class="header">
         <div class="container">
             <div class="logo">
                 <img src="./src/images/pokeball.svg" alt="pokeball" class="header-image">
-                <h1 id="intro">Pokedex</h1>
+                <h1 id=>Pokedex</h1>
             </div>
         </div>
     </header>
     <div id="pokemon-list" class="pokemon-container">
     </div>
     <script src="./src/pokemon1.js"></script>
+    <script src='./src/voicerss-tts.min.js'></script>
 </body>
 </html>
